@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border: 1px solid var(--border-color, #ddd); /* Light border around the tabs */
+  margin: 8px;
+  border-radius: 0px; /* Remove rounded corners */
+}
+
+.tabs {
+  background-color: var(--tabs-bg, #f5f5f5);
+}
+
+.tabWrapper {
+  display: flex;
+  align-items: center;
+  padding: 0 8px; /* Reduce padding */
+}
+
+.tab {
+  font-size: 0.85rem;
+  font-weight: 500;
+  background-color: var(--inactive-tab-bg, #f5f5f5);
+}
+
+.tab.Mui-selected {
+  font-weight: 600;
+  background-color: var(--active-tab-bg, #e0e0e0); /* Slightly darker to indicate focus */
+  box-shadow: inset 0px -3px 5px rgba(0, 0, 0, 0.15); /* "Pressed" effect */
+}
+
+.closeButton {
+  margin-left: 4px;
+  padding: 2px; /* Reduce padding for a tighter fit */
+}
+
+.addButton {
+  margin-left: 8px;
+  padding: 4px; /* Reduced padding for smaller size */
+}

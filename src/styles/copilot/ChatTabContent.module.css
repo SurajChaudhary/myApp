@@ -1,0 +1,21 @@
+.container {
+    height: 100%; /* Ensure container occupies available height */
+    max-height: 800px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding: 8px; /* Add optional padding for better spacing */
+    border: 1px solid var(--border-color, #ddd); /* Light border for visual clarity */
+    background-color: var(--background-color, #ffffff);
+  }
+  
+  .light {
+    --background-color: #ffffff;
+    --border-color: #ddd;
+  }
+  
+  .dark {
+    --background-color: #333333;
+    --border-color: #444;
+  }
+  

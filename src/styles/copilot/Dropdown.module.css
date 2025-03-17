@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.label {
+  width: 150px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--dark-primary, #c9d1d9);
+}
+
+.select {
+  flex: 1;
+  padding: 6px 8px;
+  border: 1px solid var(--dark-border, #30363d);
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: inherit;
+  color: inherit;
+}
+
+.select:focus {
+  border-color: var(--dark-accent, #58a6ff);
+  outline: none;
+}

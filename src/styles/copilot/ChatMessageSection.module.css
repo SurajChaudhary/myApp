@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 500px; /* Fixed height */
+  border: 1px solid var(--border-color, #ddd); /* Light border */
+  background-color: var(--background-color, #ffffff);
+  padding: 16px;
+  overflow: hidden;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--title-color, #333);
+}
+
+.messageArea {
+  flex: 1;
+  overflow-y: auto; /* Scrollable area for messages */
+  padding: 8px 0;
+}
+
+.message {
+  padding: 12px;
+  margin-bottom: 8px;
+  border: 1px solid var(--border-color, #ddd);
+}
+
+.userMessage {
+  background-color: var(--user-bg, #e3f2fd);
+  color: var(--user-text, #1565c0);
+}
+
+.llmMessage {
+  background-color: var(--llm-bg, #f1f8e9);
+  color: var(--llm-text, #33691e);
+}
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.sender {
+  font-weight: bold;
+  color: var(--sender-color, #555);
+}
+
+.timestamp {
+  font-size: 0.85rem;
+  color: var(--timestamp-color, #aaa);
+}
+
+.content {
+  font-size: 1rem;
+}
+
+.footnotes {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--footnote-color, #555);
+}
+
+.light {
+  --background-color: #ffffff;
+  --title-color: #000000;
+  --border-color: #ddd;
+  --user-bg: #e3f2fd;
+  --user-text: #1565c0;
+  --llm-bg: #f1f8e9;
+  --llm-text: #33691e;
+  --sender-color: #555;
+  --timestamp-color: #aaa;
+  --footnote-color: #333;
+}
+
+.dark {
+  --background-color: #333333;
+  --title-color: #ffffff;
+  --border-color: #444;
+  --user-bg: #1e88e5;
+  --user-text: #ffffff;
+  --llm-bg: #81c784;
+  --llm-text: #000000;
+  --sender-color: #ccc;
+  --timestamp-color: #bbb;
+  --footnote-color: #bbb;
+}

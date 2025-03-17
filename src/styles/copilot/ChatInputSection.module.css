@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* Fixed height */
+  border: 1px solid var(--border-color, #ddd); /* Light border */
+  background-color: var(--background-color, #ffffff);
+  padding: 16px;
+}
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--title-color, #333);
+}
+
+.dropdown {
+  width: 150px;
+}
+
+.inputArea {
+  flex: 1; /* Input area grows to fill available space */
+  display: flex;
+  align-items: center; /* Vertically center the send button */
+  gap: 8px; /* Space between input field and button */
+}
+
+.inputField {
+  flex: 1; /* Allow input field to occupy available space */
+  font-size: 1rem;
+  padding: 8px;
+}
+
+.sendButton {
+  align-self: center; /* Vertically align button with input field */
+}
+
+.footnotes {
+  margin-top: 8px;
+  font-size: 0.85rem;
+  color: var(--footnote-color, #555);
+}
+
+.light {
+  --background-color: #ffffff;
+  --title-color: #000000;
+  --border-color: #ddd;
+  --footnote-color: #555;
+}
+
+.dark {
+  --background-color: #333333;
+  --title-color: #ffffff;
+  --border-color: #444;
+  --footnote-color: #bbb;
+}

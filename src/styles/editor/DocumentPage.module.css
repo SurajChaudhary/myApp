@@ -1,0 +1,91 @@
+.container {
+    display: flex;
+    height: 100vh;
+    position: relative;
+  }
+  
+  .detailsSection {
+    flex: 0 0 auto; /* Fix the height for Document Details Section */
+    padding: 16px;
+    background-color: var(--background-color, #f5f5f5);
+    border-bottom: 1px solid var(--border-color, #ddd);
+  }
+  
+  .detailsRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .value {
+    color: var(--text-color, #555);
+  }
+  
+  .editorSection {
+    flex: 1; /* Editor occupies remaining vertical space */
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+  
+  .editorHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .actionButtons {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .editorArea {
+    flex: 1;
+    overflow-y: auto; /* Enable vertical scrolling for editor content */
+    border: 1px solid var(--border-color, #ddd);
+    min-height: 600px;
+  }
+  
+  .ribbon {
+    position: fixed;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .ribbonButton {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .verticalSection {
+    position: fixed;
+    top: 0;
+    right: 80px; /* Ribbon is 60px wide + 20px gap */
+    width: 300px; /* Initial width */
+    height: 100vh;
+    background-color: var(--panel-bg, #ffffff);
+    border-left: 1px solid var(--border-color, #ddd);
+    overflow-y: auto;
+  }
+  
+  .verticalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid var(--border-color, #ddd);
+  }
+  
+  .verticalContent {
+    padding: 16px;
+  }
+  

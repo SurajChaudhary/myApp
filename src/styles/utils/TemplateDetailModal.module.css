@@ -1,0 +1,51 @@
+.dialog {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dialogTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e3f2fd;
+  padding: 16px;
+}
+
+.dialogContent {
+  padding: 16px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.section {
+  margin-top: 16px;
+}
+
+.tags {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background-color: #1976d2;
+  color: white;
+}
+
+.cancelButton {
+  background: linear-gradient(to right, #d32f2f, #f44336);
+  color: white;
+  border-radius: 4px;
+}
+
+.nextButton {
+  background: linear-gradient(to right, #4caf50, #81c784);
+  color: white;
+  border-radius: 4px;
+}
