@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center; /* Center-align the title horizontally */
+  align-items: center; /* Center-align the title vertically */
+  padding: 12px 16px;
+  background-color: var(--top-section-bg, #b3e5fc); /* Light powder blue */
+  color: var(--top-section-text, #000000); /* Black font */
+  position: relative;
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 0 auto; /* Maintain centering */
+  position: relative;
+  color: var(--title-color, #000000); /* Black font color */
+}
+
+.title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background-color: var(--underline-color, #ffffff); /* White underline */
+  margin: 4px auto 0;
+}
+
+.themeButton {
+  position: absolute;
+  right: 16px; /* Place the theme button on the extreme right */
+  color: var(--icon-color, #000000); /* Enhanced contrast */
+}
+
+.themeButton:hover {
+  color: var(--icon-hover-color, #1565c0); /* Enhanced hover effect */
+}

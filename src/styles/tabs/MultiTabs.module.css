@@ -1,0 +1,11 @@
+.multiTabs {
+  width: 90%; /* Matches the width of SearchBar */
+  max-width: 1500px; /* Ensures responsiveness for large screens */
+  margin: 0 auto;
+  flex-grow: 1;
+}
+
+.tabContent {
+  margin-top: 16px;
+  min-height: 350px; /* Slightly more height to push Footer down further */
+}

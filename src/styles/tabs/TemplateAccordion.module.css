@@ -1,0 +1,51 @@
+.accordion {
+  margin-bottom: 8px;
+  border: 1px solid var(--light-border, #e0e0e0); /* Subtle border for separation */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for 3D effect */
+}
+
+.accordionSummary {
+  background-color: var(--light-bg, #f9f9f9);
+  border-bottom: 1px solid var(--light-border, #e0e0e0); /* Visual separation */
+}
+
+.accordionTitle {
+  font-weight: 600;
+}
+
+.accordionDetails {
+  background-color: var(--background, #ffffff); /* Contrasts with accordion summary */
+  padding: 16px;
+}
+
+.templateList {
+  display: flex;
+  flex-direction: column;
+  gap: 8px; /* Adds spacing between list items */
+}
+
+.listItem {
+  border-radius: 4px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  padding: 8px 12px; /* Adds padding for a better look */
+}
+
+.listItem:hover {
+  background-color: var(--light-hover, #f0f0f0); /* Subtle hover effect */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect on hover */
+}
+
+.listItemIcon {
+  color: var(--primary-color, #1976d2); /* Matches the primary theme color */
+}
+
+.listItemTextPrimary {
+  font-size: 1rem;
+  font-weight: 500; /* Slightly bolded text for better readability */
+}
+
+.listItemTextSecondary {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #6c757d); /* Secondary text color for descriptions */
+}

@@ -1,0 +1,170 @@
+{
+    "templates" : [
+        {
+            "categoryId": 1,
+            "categoryName": "Audit Board Templates",
+            "categoryTitle": "Audit Board Templates",
+            "categorySubtitle": "Audit Board Templates",
+            "categoryDescription": "Audit Board Templates",
+            "documents": [
+                {
+                    "templateId": 1,
+                    "templateName": "Anti Financial Crime Assessment Template 2024",
+                    "templateTitle": "Anti Financial Crime Assessment",
+                    "templateSubtitle": "Anti Financial Crime Assessment Template",
+                    "templateDescription": "Anti Financial Crime Assessment Template 2024",
+                    "templateType": "AFCA",
+                    "templateModalFields": [
+                        {
+                            "id": 1,
+                            "label": "Template Name",
+                            "name": "templateName",
+                            "type": "text"
+                        },
+                        {
+                            "id": 2,
+                            "label": "Template Type",
+                            "name": "templateType",
+                            "type": "text"
+                        },
+                        {
+                            "id": 3,
+                            "label": "Product Code",
+                            "name": "productCode",
+                            "type": "text"
+                        },
+                        {
+                            "id": 4,
+                            "label": "Product Name",
+                            "name": "productName",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "templateId": 2,
+                    "templateName": "Peer Review Scope Template 2024",
+                    "templateTitle": "Peer Review Scope",
+                    "templateSubtitle": "Peer Review Scope Template",
+                    "templateDescription": "Peer Review Scope Template 2024",
+                    "templateType": "PRST",
+                    "templateModalFields": [
+                        {
+                            "id": 1,
+                            "label": "Template Name",
+                            "name": "templateName",
+                            "type": "text"
+                        },
+                        {
+                            "id": 2,
+                            "label": "Template Type",
+                            "name": "templateType",
+                            "type": "text"
+                        },
+                        {
+                            "id": 3,
+                            "label": "Product Code",
+                            "name": "productCode",
+                            "type": "text"
+                        },
+                        {
+                            "id": 4,
+                            "label": "Product Name",
+                            "name": "productName",
+                            "type": "text"
+                        },
+                        {
+                            "id": 5,
+                            "label": "Audit Reviewer(s)",
+                            "name": "auditReviewers",
+                            "type": "text"
+                        },
+                        {
+                            "id": 6,
+                            "label": "Audit Review Date",
+                            "name": "auditReviewDate",
+                            "type": "date"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "categoryId": 2,
+            "categoryName": "Control Assessment Templates",
+            "categoryTitle": "Control Assessment Templates",
+            "categorySubtitle": "Control Assessment Templates",
+            "categoryDescription": "Control Assessment Templates",
+            "documents": [
+                {
+                    "templateId": 1,
+                    "templateName": "Control Design Assessment Template 2024",
+                    "templateTitle": "Control Design Assessment",
+                    "templateSubtitle": "Control Design Assessment Template",
+                    "templateDescription": "Control Design Assessment Template 2024",
+                    "templateType": "CDA",
+                    "templateModalFields": [
+                        {
+                            "id": 1,
+                            "label": "Template Name",
+                            "name": "templateName",
+                            "type": "text"
+                        },
+                        {
+                            "id": 2,
+                            "label": "Template Type",
+                            "name": "templateType",
+                            "type": "text"
+                        },
+                        {
+                            "id": 3,
+                            "label": "Product Code",
+                            "name": "productCode",
+                            "type": "text"
+                        },
+                        {
+                            "id": 4,
+                            "label": "Product Name",
+                            "name": "productName",
+                            "type": "text"
+                        }
+                    ]
+                },
+                {
+                    "templateId": 2,
+                    "templateName": "Control Effectiveness Assessment Template 2024",
+                    "templateTitle": "Control Effectiveness Assessment",
+                    "templateSubtitle": "Control Effectiveness Assessment Template",
+                    "templateDescription": "Control Effectiveness Assessment Template 2024",
+                    "templateType": "CEA",
+                    "templateModalFields": [
+                        {
+                            "id": 1,
+                            "label": "Template Name",
+                            "name": "templateName",
+                            "type": "text"
+                        },
+                        {
+                            "id": 2,
+                            "label": "Template Type",
+                            "name": "templateType",
+                            "type": "text"
+                        },
+                        {
+                            "id": 3,
+                            "label": "Product Code",
+                            "name": "productCode",
+                            "type": "text"
+                        },
+                        {
+                            "id": 4,
+                            "label": "Product Name",
+                            "name": "productName",
+                            "type": "text"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

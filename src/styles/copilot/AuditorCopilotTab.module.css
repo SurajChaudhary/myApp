@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--background-color, #ffffff);
+  border: 1px solid var(--border-color, #ccc);
+  padding: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.divider {
+  height: 2px;
+  background-color: var(--divider-color, #ddd);
+  margin: 0;
+}
+
+.light {
+  --background-color: #ffffff;
+  --top-section-text: #333333;
+  --divider-color: #ddd;
+  --border-color: #ccc;
+}
+
+.dark {
+  --background-color: #121212;
+  --top-section-text: #ffffff;
+  --divider-color: #444;
+  --border-color: #444;
+}

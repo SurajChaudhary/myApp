@@ -1,0 +1,10 @@
+.searchBar {
+  width: 90%;
+  max-width: 1500px;
+  margin: 8px auto 16px; /* Minimal gap above and below */
+}
+
+/* Custom styling for the search icon */
+.searchIcon {
+  color: var(--primary-color, #1976d2); /* Matches the Header's background color */
+}

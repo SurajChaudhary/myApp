@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 300px; /* Fixed height */
+  border: 1px solid var(--border-color, #ddd); /* Light border */
+  background-color: var(--background-color, #ffffff);
+  padding: 16px;
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: var(--title-color, #333);
+}
+
+.responseArea {
+  flex: 1;
+  overflow-y: auto; /* Enable vertical scrolling */
+  padding: 16px;
+  background-color: var(--response-bg, #f9f9f9);
+  border: 1px solid var(--border-color, #ddd);
+}
+
+.responseText {
+  font-size: 1rem;
+  color: var(--response-text-color, #555);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.footnotes {
+  font-size: 0.85rem;
+  color: var(--footnote-color, #777);
+}
+
+.copyButton {
+  color: var(--icon-color, #333);
+}
+
+.copyButton:hover {
+  color: var(--icon-hover-color, #1565c0);
+}
+
+.light {
+  --background-color: #ffffff;
+  --title-color: #000000;
+  --border-color: #ddd;
+  --response-bg: #f9f9f9;
+  --response-text-color: #333;
+  --footnote-color: #555;
+  --icon-color: #333;
+  --icon-hover-color: #1565c0;
+}
+
+.dark {
+  --background-color: #333333;
+  --title-color: #ffffff;
+  --border-color: #444;
+  --response-bg: #444444;
+  --response-text-color: #ddd;
+  --footnote-color: #bbb;
+  --icon-color: #ffffff;
+  --icon-hover-color: #90caf9;
+}
