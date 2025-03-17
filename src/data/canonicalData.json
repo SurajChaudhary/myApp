@@ -1,0 +1,131 @@
+{
+    "auditUniverses": [
+        {
+            "id": 1,
+            "name": "Audit Universe 1",
+            "title": "Projects",
+            "projects": [
+                {
+                    "projectId": 1,
+                    "projectName": "Project 1",
+                    "projectCode": "Project 1",
+                    "projectDescription": "Project 1",
+                    "projectType": "PT1",
+                    "workPapers": [
+                        {
+                            "workPaperId": 1,
+                            "workPaperName": "Report Issuance",
+                            "workPaperCode": "RPIC",
+                            "workPaperDescription": "Work Paper 1",
+                            "sections": [
+                                {
+                                    "sectionId": 1,
+                                    "sectionName": "Introduction",
+                                    "sectionCode": "Section 1",
+                                    "sectionDescription": "Section 1",
+                                    "value": "Lorem Ipsum"
+                                },
+                                {
+                                    "sectionId": 2,
+                                    "sectionName": "Background",
+                                    "sectionCode": "Section 2",
+                                    "sectionDescription": "Section 2",
+                                    "value": "Lorem Ipsum"
+                                },
+                                {
+                                    "sectionId": 3,
+                                    "sectionName": "Scope",
+                                    "sectionCode": "Section 3",
+                                    "sectionDescription": "Section 3",
+                                    "value": "Lorem Ipsum"
+                                }
+                            ]
+                        },
+                        {
+                            "workPaperId": 2,
+                            "workPaperName": "Audit Planning",
+                            "workPaperCode": "AP",
+                            "workPaperDescription": "Work Paper 2",
+                            "sections": [
+                                {
+                                    "sectionId": 1,
+                                    "sectionName": "Introduction",
+                                    "sectionCode": "Section 1",
+                                    "sectionDescription": "Section 1",
+                                    "value": "Lorem Ipsum"
+                                }
+                            ]
+                        }
+                    ],
+                    "relatedProjects": [
+                        {
+                            "relatedProjectId": 1,
+                            "relatedProjectName": "Related Project 1",
+                            "relatedProjectCode": "Related Project 1",
+                            "relatedProjectDescription": "Related Project 1",
+                            "relatedProjectType": "RPT1",
+                            "workPapers": [
+                                {
+                                    "workPaperId": 1,
+                                    "workPaperName": "Report Issuance",
+                                    "workPaperCode": "RPIC",
+                                    "workPaperDescription": "Work Paper 1",
+                                    "sections": [
+                                        {
+                                            "sectionId": 1,
+                                            "sectionName": "Introduction",
+                                            "sectionCode": "Section 1",
+                                            "sectionDescription": "Section 1",
+                                            "value": "Lorem Ipsum"
+                                        },
+                                        {
+                                            "sectionId": 2,
+                                            "sectionName": "Background",
+                                            "sectionCode": "Section 2",
+                                            "sectionDescription": "Section 2",
+                                            "value": "Lorem Ipsum"
+                                        },
+                                        {
+                                            "sectionId": 3,
+                                            "sectionName": "Scope",
+                                            "sectionCode": "Section 3",
+                                            "sectionDescription": "Section 3",
+                                            "value": "Lorem Ipsum"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "workPaperId": 2,
+                                    "workPaperName": "Audit Planning",
+                                    "workPaperCode": "AP",
+                                    "workPaperDescription": "Work Paper 2",
+                                    "sections": [
+                                        {
+                                            "sectionId": 1,
+                                            "sectionName": "Introduction",
+                                            "sectionCode": "Section 1",
+                                            "sectionDescription": "Section 1",
+                                            "value": "Lorem Ipsum"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Audit Universe 2",
+            "title": "Assesment Units",
+            "assesmentUnits": []
+        },
+        {
+            "id": 3,
+            "name": "Audit Universe 3",
+            "title": "Legal Entities",
+            "legalEntities": []
+        }
+    ]
+}

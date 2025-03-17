@@ -1,0 +1,31 @@
+.fieldRow {
+    display: flex;
+    align-items: center;
+    gap: 16px; /* Space between label and dropdown */
+    margin-bottom: 12px; /* Spacing between rows */
+  }
+  
+  .label {
+    width: 150px; /* Set consistent width for labels */
+    font-size: 14px; /* Modern font size */
+    font-weight: 500; /* Medium weight for labels */
+    color: var(--dark-primary, #c9d1d9); /* Ensure labels align with theme color */
+  }
+  
+  .select {
+    flex: 1; /* Dropdown expands to fill available space */
+    padding: 6px 8px; /* Add padding for better usability */
+    border: 1px solid var(--dark-border, #30363d); /* Border matches theme */
+    border-radius: 4px; /* Rounded edges for dropdown */
+    font-size: 14px; /* Match font size for consistency */
+    background-color: inherit; /* Dynamic background to match theme */
+    color: inherit; /* Ensure text color matches the theme */
+    box-sizing: border-box; /* Include padding in size calculation */
+    transition: border-color 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .select:focus {
+    border-color: var(--dark-accent, #58a6ff); /* Highlight border on focus */
+    outline: none; /* Remove default focus outline */
+  }
+  

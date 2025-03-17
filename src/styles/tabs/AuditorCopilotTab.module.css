@@ -1,0 +1,388 @@
+/* ----------------------- Theme Variables ----------------------- */
+:root {
+  /* Dark theme colors */
+  --dark-bg: #0d1117;
+  --dark-primary: #c9d1d9;
+  --dark-border: #30363d;
+  --dark-accent: #58a6ff;
+
+  /* Light theme colors */
+  --light-bg: #ffffff;
+  --light-primary: #24292e;
+  --light-border: #eeeeee;
+  --light-accent: #58a6ff;
+}
+
+/* ----------------------- Base Styles ----------------------- */
+.container {
+  padding: 16px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, sans-serif;
+  font-size: 14px;
+}
+
+.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-primary);
+}
+
+.light {
+  background-color: var(--light-bg);
+  color: var(--light-primary);
+}
+
+/* ----------------------- Top Bar ----------------------- */
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px; /* Gap between Top Bar and Chat Tabs */
+}
+
+.centerTitle {
+  flex: 1;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--dark-accent);
+}
+
+.titleSeparator {
+  border: none;
+  border-top: 1px solid currentColor;
+  width: 80%;
+  margin-top: 4px;
+}
+
+/* Theme Toggle Button */
+.themeToggle {
+  border-radius: 50%;
+  padding: 4px;
+  cursor: pointer;
+  border: 1px solid currentColor;
+  color: inherit;
+}
+
+/* ----------------------- Chat Tabs ----------------------- */
+.chatTabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--dark-border);
+}
+
+.activeTab {
+  border-bottom: 2px solid var(--dark-accent);
+  font-weight: bold;
+}
+
+.addIcon {
+  font-size: 1.5rem;
+  color: var(--dark-accent);
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-align: left;
+}
+
+/* ----------------------- Section Container ----------------------- */
+.sectionContainer {
+  border: 1px solid var(--dark-border);
+  border-radius: 4px;
+  padding: 16px;
+  background-color: inherit;
+  color: inherit;
+}
+
+.light .sectionContainer {
+  background-color: var(--light-bg);
+  color: var(--light-primary);
+}
+
+/* ----------------------- Current Context Section ----------------------- */
+.currentContext {
+  height: 100px; /* Restrict height to fit 3 rows */
+  overflow-y: auto; /* Allow scrolling */
+}
+
+.contextSelect {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid var(--dark-border);
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: inherit;
+  color: inherit;
+}
+
+/* ----------------------- Related Context Section ----------------------- */
+.relatedContext {
+  height: 120px; /* Restrict height of related context section */
+  overflow-y: auto;
+}
+
+.relatedSearchInput {
+  width: 100%; /* Ensure the input takes full width of its container */
+  padding: 6px 8px;
+  border: 1px solid var(--dark-border);
+  border-radius: 4px;
+  background-color: inherit;
+  color: inherit;
+  box-sizing: border-box;
+  max-width: 1100px; /* Optional: Limit maximum width */
+  margin-bottom: 12px; /* Add space below the search input */
+}
+
+.relatedDropdown {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0;
+  border: 1px solid var(--dark-border);
+  border-radius: 4px;
+  background-color: inherit;
+  color: inherit;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.relatedDropdownItem {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.relatedDropdownItem:hover {
+  background-color: var(--dark-accent);
+  color: white;
+}
+
+.relatedTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.relatedTag {
+  background-color: var(--dark-accent);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.removeTag {
+  margin-left: 4px;
+  cursor: pointer;
+  color: #f78166;
+}
+
+/* Regenerate Button */
+.regenerateButtonContainer {
+  position: absolute; /* Absolute positioning relative to the sectionGroup */
+  bottom: -16px; /* Positioned just below the relatedContext section */
+  right: 16px; /* Aligned to the right */
+}
+
+.sectionGroup {
+  position: relative; /* Ensure sectionGroup is the parent for positioning */
+  margin-bottom: 10px; /* Increase margin to accommodate the button */
+}
+
+.regenerateButtonRow {
+  margin-top: 1px; /* Adds space above the button */
+  margin-bottom: 1px; /* Adds space below the button */
+  text-align: right; /* Aligns the button to the right */
+}
+
+.regenerateButton {
+  padding: 8px;
+  color: var(--dark-accent);
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.regenerateButton:hover {
+  background-color: var(--dark-border);
+  border-radius: 50%;
+  transform: rotate(360deg); /* Optional hover effect */
+}
+
+.dark .regenerateButton {
+  color: white;
+}
+
+.light .regenerateButton {
+  color: var(--light-primary);
+}
+
+/* ----------------------- Messages Section ----------------------- */
+.messagesSection {
+  max-height: 400px; /* Double the original height */
+  overflow-y: auto;
+}
+
+.noMessages {
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+.messageWrapper {
+  margin-bottom: 8px;
+}
+
+.messageHeader {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+}
+
+.messageSender {
+  font-weight: bold;
+}
+
+.messageTimestamp {
+  color: #8b949e;
+}
+
+.message {
+  padding: 8px;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  line-height: 1.4;
+}
+
+.dark .llmMessage {
+  background-color: #1f2937;
+  color: #cbd5e1;
+}
+
+.dark .userMessage {
+  background-color: #374151;
+  color: #f8fafc;
+}
+
+.light .llmMessage {
+  background-color: #e2e8f0;
+  color: #1e293b;
+}
+
+.light .userMessage {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+/* ----------------------- Latest Response Section ----------------------- */
+.latestResponse {
+  padding: 8px;
+  min-height: 60px;
+}
+
+.latestHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.responseActions {
+  display: flex;
+  gap: 4px;
+}
+
+.actionButton {
+  padding: 4px;
+}
+
+/* ----------------------- Chat Window ----------------------- */
+.chatHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.chatTab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  margin-right: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.chatTab span {
+  flex-grow: 1; /* Ensures title occupies remaining space */
+  cursor: pointer;
+}
+
+.closeChatButton {
+  margin-left: 8px;
+  color: var(--dark-border, #30363d);
+  font-size: 0.8rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.closeChatButton:hover {
+  color: var(--dark-accent, #58a6ff);
+}
+
+.gptModelSelect {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: 1px solid var(--dark-border);
+  border-radius: 4px;
+  background-color: inherit;
+  color: inherit;
+}
+
+.gptModelSelect:focus {
+  outline: none;
+  border-color: var(--dark-accent);
+}
+
+.chatWindow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: auto; /* Allow it to take all available height */
+}
+
+.chatInput {
+  flex: 1; /* Make the input expand to occupy available width */
+  height: 3rem; /* Increase height for better usability (adjust as needed) */
+  padding: 8px;
+  border: 1px solid var(--dark-border);
+  border-radius: 4px;
+  background-color: inherit;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+.chatInput:focus {
+  outline: none;
+  border-color: var(--dark-accent); /* Highlight on focus */
+}
+
+.sendButton {
+  padding: 8px;
+  color: inherit;
+}
+
+/* ContentCopyIcon and SendIcon styles for dark and light modes */
+.dark .iconButton svg {
+  color: white; /* Visible in dark theme */
+}
+
+.light .iconButton svg {
+  color: black; /* Visible in light theme */
+}
