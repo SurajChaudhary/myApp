@@ -1,0 +1,41 @@
+.homePage {
+  min-height: 90vh; /* Occupies full height of the viewport */
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(145deg, #ffffff, #e6e6e6);
+
+  /* It's a good idea to use flex for vertical stacking and spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Apply consistent width and spacing to all sections */
+.header,
+.footer,
+.searchBar,
+.multiTabs {
+  width: 100%; /* Take up available space */
+  margin-top: 1px;
+  max-width: 1400px; /* Constrain maximum width */
+}
+
+.header {
+  margin-bottom: 1px; /* Reduce space below the header */
+}
+
+.searchBar {
+  margin-bottom: 2px; /* Reduce space below the search bar */
+}
+
+.multiTabs {
+  margin-top: 0; /* Eliminate unnecessary space above multi-tabs */
+  margin-bottom: 16px; /* Keep some spacing below multi-tabs */
+}
+
+.multiTabs {
+  min-height: 55vh;
+}

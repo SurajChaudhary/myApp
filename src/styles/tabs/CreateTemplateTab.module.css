@@ -1,0 +1,55 @@
+/* Categories list styling */
+.categoriesList {
+    list-style: none; /* Remove default bullets for categories */
+    padding-left: 0; /* Align categories flush with the parent container */
+  }
+  
+  /* Individual category */
+  .categoryItem {
+    margin-bottom: 16px; /* Space between categories */
+  }
+  
+  /* Templates list styling */
+  .templatesList {
+    list-style: disc; /* Add bullets for templates */
+    padding-left: 20px; /* Indent templates under categories */
+  }
+  
+  .accordion {
+    border: 1px solid var(--dark-border); /* Give a subtle border for structure */
+    border-radius: 8px; /* Rounded edges for a modern look */
+    margin-bottom: 12px; /* Less spacing between accordions */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add light shadow for depth */
+  }
+  
+  .accordion:last-child {
+    margin-bottom: 0; /* Remove extra spacing for the last accordion */
+  }
+
+  .categoryTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark-accent);
+    margin-bottom: 8px; /* Reduced spacing below the category title */
+  }
+  
+
+  .templatesContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Add a small gap between template names */
+  }
+  
+  .templateItem {
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 4px; /* Rounded edges for each template item */
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+  }
+  
+  .templateItem:hover {
+    background-color: powderblue; /* Highlight template name on hover */
+    color: white; /* Optional: Change text color to contrast hover background */
+  }
+  
+  
